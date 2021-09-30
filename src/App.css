@@ -8,3 +8,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.fade-up {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.fade-up.fade-animate {
+  opacity: 1;
+  transform: translateY(0px);
+}

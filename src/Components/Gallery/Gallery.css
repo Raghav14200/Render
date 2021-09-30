@@ -16,6 +16,7 @@
   object-fit: cover;
   min-height: 400px;
   max-height: 550px;
+  height: 100%;
 }
 
 .gallery__main {
@@ -50,7 +51,6 @@
 
 .gallery .gallery__aside {
   position: relative;
-  z-index: -1;
 }
 
 .gallery .gallery__sidetag {
@@ -81,6 +81,7 @@
   color: grey;
   margin: 0 0 0 20px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 @media (max-width: 1200px) {

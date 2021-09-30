@@ -7,7 +7,7 @@ function Contacts() {
         <div className="">
         <div className='contact'>
             <h1>Don't be shy,write to us</h1>
-            <form >
+            <form className='fade-up'>
                 <div className="contact__label">
                 <div className="contact__name">
                 <label for='name'>Name*</label>

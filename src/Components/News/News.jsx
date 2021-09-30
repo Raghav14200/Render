@@ -11,7 +11,7 @@ function News() {
         <div className="news__container">
             <h1>News and Events</h1>
         <div className="news">
-            <div className="news__main">
+            <div className="news__main fade-up">
                 <img src={news1} className="news__main_img"  />
                 <p className="news__tag gold">News</p>
                 <div >
@@ -21,7 +21,7 @@ function News() {
             </div>
             
             <div className="news__aside">
-                <div >
+                <div className='fade-up'>
                     <div >
                         <img src={news2}  />
                         <p className="news__tag skyblue">Events</p>
@@ -32,7 +32,7 @@ function News() {
                         <p className="news__p"><LocationOn/> Alaska, August 6,2021</p>    
                     </div>
                 </div>
-                <div >
+                <div className='fade-up'>
                     <div>
                     <img src={news3} alt="" />
                     <p className="news__tag green">Events</p>
