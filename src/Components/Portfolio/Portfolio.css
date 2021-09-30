@@ -1,0 +1,39 @@
+.portfolio {
+  display: flex;
+  gap: 15px;
+  margin: 0 10%;
+  text-align: left;
+}
+
+#portfolio {
+  margin-top: 5px;
+}
+
+.portfolio > div {
+  width: 100%;
+}
+
+.portfolio__container {
+  text-align: center;
+  padding: 110px 0 0;
+}
+
+.portfolio__container h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+@media (max-width: 922px) {
+  .portfolio {
+    margin: 0 7%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio {
+    flex-direction: column;
+    gap: 0;
+  }
+}

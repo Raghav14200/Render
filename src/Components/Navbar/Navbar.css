@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  position: relative;
+}
+
+.navbar__container {
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  box-shadow: 0 5px 50px rgb(82, 81, 81);
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: auto;
+}
+
+.navbar > ul {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 100vw;
+}
+
+.navbar > div:first-child {
+  font-size: 20px;
+  position: absolute;
+  left: 100px;
+  color: gold;
+  font-weight: 900;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin: 0 30px 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar ul li a:link {
+  color: grey;
+}
+
+.navbar ul li a:visited {
+  color: grey;
+}
+
+.navbar ul li a:hover {
+  color: grey;
+}
+
+.navbar ul li a:active {
+  color: grey;
+}
+
+.navbar ul .active a:link,
+.navbar ul .active a:visited,
+.navbar ul .active a:hover,
+.navbar ul .active a:active {
+  color: black;
+}
+
+.active::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: -23px;
+  top: calc(50% - 7.5px);
+  background-color: gold;
+}
+
+.navbar ul a {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .collapse:not(.show) {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .navbar > ul {
+    position: static;
+    width: auto;
+    height: 100%;
+  }
+
+  .navbar ul li {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,29 @@
+.portfolioitem h2 {
+  margin: 15px 0 3px 0;
+  font-size: 24px;
+}
+
+.portfolioitem p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+.portfolioitem img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.portfolioitem {
+  margin-bottom: 45px;
+}
+
+@media (max-width: 600px) {
+  .portfolioitem h2 {
+    font-size: 22px;
+  }
+
+  .portfolioitem p {
+    font-size: 12px;
+  }
+}

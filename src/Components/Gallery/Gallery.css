@@ -1,0 +1,150 @@
+.gallery {
+  display: flex;
+  max-height: 550px;
+}
+
+.gallery div {
+  width: 100%;
+}
+
+.gallery > div {
+  width: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 400px;
+  max-height: 550px;
+}
+
+.gallery__main {
+  display: flex;
+}
+
+.gallery .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  max-height: 550px;
+}
+
+.gallery .flex h3 {
+  font-size: 42px;
+  line-height: 1.5;
+}
+
+.gallery .flex p {
+  font-size: 20px;
+  color: grey;
+}
+
+.gallery .flex h5 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.gallery .gallery__aside {
+  position: relative;
+  z-index: -1;
+}
+
+.gallery .gallery__sidetag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(7, 166, 196, 255);
+  width: 400px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.gallery .gallery__sidetag h2 {
+  margin-bottom: 10px;
+}
+
+.gallery__icons {
+  text-align: center;
+}
+
+.gallery__icons > .MuiSvgIcon-root {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 35px;
+  color: grey;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery .flex h3 {
+    font-size: 32px;
+  }
+
+  .gallery .flex p {
+    font-size: 18px;
+  }
+
+  .gallery .gallery__sidetag h2 {
+    font-size: 22px;
+  }
+
+  .gallery .gallery__sidetag p {
+    font-size: 16px;
+  }
+
+  .gallery .gallery__sidetag {
+    width: 350px;
+    padding: 10px;
+  }
+
+  .gallery__icons > .MuiSvgIcon-root {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery .flex h3 {
+    font-size: 26px;
+  }
+
+  .gallery .flex p {
+    font-size: 14px;
+  }
+
+  .gallery__main {
+    flex-direction: column;
+  }
+
+  .gallery .gallery__sidetag h2 {
+    font-size: 20px;
+  }
+
+  .gallery .gallery__sidetag p {
+    font-size: 14px;
+  }
+
+  .gallery .gallery__sidetag {
+    width: 300px;
+    padding: 7.5px;
+  }
+
+  .gallery__icons > .MuiSvgIcon-root {
+    font-size: 25px;
+  }
+}

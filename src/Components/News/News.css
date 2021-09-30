@@ -1,0 +1,147 @@
+.news {
+  display: flex;
+  gap: 20px;
+  margin: 0 10%;
+  text-align: left;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.news__container {
+  padding: 100px 0 0;
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+#news {
+  margin-top: 5px;
+}
+
+.news__container h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.news > div {
+  width: 100%;
+}
+
+.news img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news .news__main_img {
+  height: 450px;
+}
+
+.news__main p {
+  margin-top: 10px;
+}
+
+.news__aside > div {
+  display: flex;
+  height: 200px;
+  position: relative;
+}
+
+.news__aside > div:first-child {
+  margin-bottom: 50px;
+}
+
+.news__aside > div > div {
+  padding: 0px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.news__padding {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.news__aside > div > div p {
+  color: grey;
+  margin-top: 10px;
+}
+
+.news__aside > div > div .news__tag,
+.news__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  color: white;
+  padding: 7px 15px;
+}
+
+.news__aside > div > div .news__tag {
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+.green {
+  background-color: rgb(104, 238, 104);
+}
+
+.news__main {
+  position: relative;
+}
+
+.news__aside > div > div .news__p {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .news {
+    margin: 0 7%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .news {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .news h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .news p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .news__aside > div > div .news__p {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .news h3 {
+    font-size: 20px;
+  }
+
+  .news p {
+    font-size: 14px;
+  }
+
+  .news__aside > div {
+    flex-direction: column;
+    height: auto;
+  }
+}
